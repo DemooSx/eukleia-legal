@@ -4,7 +4,7 @@ title: Politique de confidentialité — Eukleia
 
 # Politique de confidentialité — Eukleia
 
-**Dernière mise à jour :** 2 septembre 2026
+**Dernière mise à jour :** 3 octobre 2026
 
 
 ## 1. En résumé
@@ -16,10 +16,12 @@ choisir lesquels viser.
   aucun outil d'analytique, de suivi de plantages ou de profilage publicitaire.
 - **Vous ne saisissez jamais le mot de passe d'une plateforme de jeu.** Ni Steam, ni
   PlayStation, ni RetroAchievements — voir la section 3.
-- **Vos données sont hébergées dans l'Union européenne** (Francfort, Allemagne).
+- **Vos données sont hébergées dans l'Union européenne** (Francfort, Allemagne). Une
+  seule chose en sort, et seulement si vous signalez un problème — voir la section 6.
 - **Vos données ne sont visibles par personne d'autre**, sauf par les amis que vous
   ajoutez vous-même, et jamais vos notes — voir la section 6.
-- **Vous pouvez tout effacer depuis l'application**, définitivement, en deux touches.
+- **Vous pouvez tout exporter et tout effacer depuis l'application**, définitivement, en
+  deux touches, sans nous écrire.
 
 ## 2. Qui est responsable de ces données
 
@@ -35,19 +37,42 @@ recevra une réponse dans le délai d'un mois que prévoit le règlement.
 
 ## 3. La connexion
 
-Vous vous connectez par **Apple**, par **Google**, ou par **adresse e-mail et mot de
-passe**.
+Vous vous connectez par **Apple** ou par **Google**. Vous pouvez aussi **continuer sans
+compte**.
+
+**Il n'y a plus de connexion par adresse e-mail et mot de passe.** Cette voie a été
+retirée de l'application ; il n'existe aucun écran où saisir un mot de passe.
 
 **Votre mot de passe n'est jamais vu par nous.** Avec Apple et Google, il ne quitte pas
-leur écran de connexion et nous ne recevons qu'un jeton d'identité signé. Avec une
-adresse e-mail, le mot de passe est confié directement à notre hébergeur, qui n'en
-conserve qu'une empreinte cryptographique irréversible.
+leur écran de connexion et nous ne recevons qu'un jeton d'identité signé.
 
 **Ce que la création de compte enregistre : votre identifiant, et rien d'autre.** Ni
 votre nom, ni votre photo ne sont repris d'Apple ou de Google. Votre adresse e-mail est
-conservée par le service d'authentification pour vous reconnaître et, le cas échéant,
-vous permettre de réinitialiser votre mot de passe. Si vous utilisez « Masquer mon
-adresse e-mail » d'Apple, nous ne voyons que l'adresse relais qu'Apple génère.
+conservée par le service d'authentification pour vous reconnaître. Si vous utilisez
+« Masquer mon adresse e-mail » d'Apple, nous ne voyons que l'adresse relais qu'Apple
+génère.
+
+### Continuer sans compte
+
+Vous pouvez utiliser Eukleia sans vous identifier auprès d'Apple ni de Google. Une session
+**anonyme** est alors ouverte : elle n'est rattachée à aucune identité, et nous ne
+recevons ni adresse e-mail, ni nom, ni identifiant de fournisseur.
+
+**Ce que cela coûte, et nous préférons l'écrire.** Vos données sont bien conservées sur
+le serveur, mais **la clé qui les ouvre ne vit que sur cet appareil**. Désinstaller
+l'application, vous déconnecter ou perdre cet appareil les rend **inaccessibles pour
+toujours** — à vous comme à nous. L'application vous l'annonce avant que vous choisissiez.
+
+**Conséquence sur vos droits, et elle est réelle :** des données devenues inaccessibles
+de cette façon ne peuvent plus être supprimées depuis l'application, puisqu'il n'existe
+plus aucun moyen de prouver qu'elles sont les vôtres. Elles ne désignent alors personne —
+une session anonyme ne porte ni adresse e-mail, ni nom, ni identifiant de fournisseur —
+mais elles subsistent. **Si cela vous gêne, créez un compte**, ou supprimez vos données
+avant de désinstaller.
+
+Vous pouvez à tout moment attacher un compte Apple ou Google à une session anonyme : la
+liaison se fait sur le même compte côté serveur, et vous gardez tout ce que vous avez
+déjà fait.
 
 ### Les trois plateformes de jeu sont des liens, pas des identités
 
@@ -87,10 +112,27 @@ dans l'application.
 | Le jeu que vous désignez comme actif | Vous | L'onglet « Chasse en cours » |
 | Si votre profil Steam est public | Déduit | Vous expliquer pourquoi la synchronisation échoue |
 | Dates de synchronisation | Système | Éviter de solliciter Steam inutilement |
+| Le texte d'un signalement de problème, et son contexte technique | Vous | Reproduire et corriger le défaut — voir ci-dessous |
 
 **Les notes que vous écrivez sont du texte libre.** Elles ne sont lues par personne
 d'autre que vous, mais évitez d'y mettre quoi que ce soit de sensible : ce champ n'est
 pas prévu pour ça.
+
+### Les signalements de problème
+
+Si vous signalez un problème depuis l'application (Réglages → Signaler un problème), nous
+conservons votre message et le contexte technique que l'écran vous annonce avant l'envoi :
+**la version d'Eukleia, la version de votre système, le modèle de votre appareil,
+l'identifiant de votre compte, et les dernières erreurs rencontrées par l'application**.
+
+Ce contexte sert à reproduire le défaut. Le modèle d'appareil est l'identifiant matériel
+(« iPhone17,2 »), pas un numéro de série : il ne désigne pas votre appareil, il désigne
+son modèle.
+
+**Le message est du texte libre, et il part tel que vous l'écrivez.** N'y mettez rien que
+vous ne voudriez pas nous confier. Trois signalements au plus par période de 24 heures.
+
+Ce que devient un signalement quand vous supprimez votre compte est décrit en section 9.
 
 Le catalogue des jeux et des succès (noms, descriptions, icônes, rareté) est **partagé
 entre tous les utilisateurs** et ne contient aucune donnée personnelle.
@@ -100,7 +142,7 @@ entre tous les utilisateurs** et ne contient aucune donnée personnelle.
 Deux tables servent uniquement à sécuriser la connexion. Elles ne contiennent que des
 **empreintes cryptographiques**, jamais de valeur utilisable, et leurs lignes expirent
 automatiquement — deux minutes pour les codes d'échange, quinze minutes pour les défis de
-connexion. Elles sont purgées ensuite.
+connexion. Les lignes expirées sont effacées une heure plus tard.
 
 ### Ce que nous ne collectons pas
 
@@ -114,17 +156,30 @@ L'application conserve localement :
 
 - votre choix de langue ;
 - votre choix d'affichage des libellés de la barre d'onglets ;
-- les jetons de votre session, pour ne pas vous redemander de vous connecter.
+- votre ordre de tri de la bibliothèque, et votre mode d'affichage du Panthéon ;
+- une **copie de travail** des données déjà chargées — vos jeux, vos succès — pour que
+  l'application s'ouvre sans attendre le réseau ;
+- les jetons de votre session, pour ne pas vous redemander de vous connecter ;
+- **votre jeton de session PlayStation**, si vous avez lié un compte PlayStation. Il est
+  rangé dans le **stockage sécurisé du système** (le trousseau d'iOS), et nulle part
+  ailleurs : il n'est jamais écrit dans notre base. Il voyage vers notre serveur le temps
+  d'une synchronisation, qui l'emploie et l'oublie.
 
-Désinstaller l'application efface tout cela. Cela **n'efface pas** les données conservées
-sur le serveur — voir la section 8.
+**Les widgets.** Si vous posez un widget Eukleia sur votre écran d'accueil, l'application
+dépose dans un espace partagé avec lui, sur votre appareil, l'instantané de ce qu'il
+affiche. Cet espace ne quitte pas l'appareil.
+
+Désinstaller l'application efface tout cela, y compris le jeton PlayStation et
+l'instantané des widgets. Cela **n'efface pas** les données conservées sur le serveur —
+voir la section 8.
 
 ## 6. Avec qui ces données sont partagées
 
 **Personne, au sens commercial.** Vos données ne sont ni vendues, ni louées, ni
 transmises à des annonceurs ou à des courtiers en données.
 
-Deux prestataires techniques interviennent nécessairement :
+Les tiers qui interviennent nécessairement sont les suivants, et il n'y en a pas
+d'autres :
 
 **Valve Corporation (Steam).** L'application interroge l'API publique de Steam et lit la
 page de succès de votre profil communautaire. Votre SteamID est donc transmis à Steam —
@@ -141,8 +196,22 @@ et votre clé d'API.
 Eukleia, comme pour toute application où l'on se connecte ainsi.
 
 **Supabase.** Héberge la base de données et les fonctions serveur, dans sa région
-`eu-central-1` (**Francfort, Allemagne**). Vos données ne quittent pas l'Union
-européenne.
+`eu-central-1` (**Francfort, Allemagne**). C'est là que vivent toutes vos données.
+
+**Notion**, et uniquement si vous signalez un problème. Nos signalements sont suivis dans
+un outil fourni par Notion Labs, Inc., société établie aux **États-Unis**. C'est le seul
+traitement de ce document qui sorte de l'Union européenne, et ce qui en sort est
+strictement délimité :
+
+| Part chez Notion | Ne part PAS chez Notion |
+|---|---|
+| Un numéro de ligne, la date du signalement | **Votre message** |
+| La version d'Eukleia, la version de votre système | **L'identifiant de votre compte** |
+| Le modèle de votre appareil | **Le journal des erreurs** |
+
+Le code qui parle à Notion **ne charge même pas** le message, l'identifiant de compte ni
+le journal : ce qu'il ne lit pas ne peut pas sortir. Ces trois éléments restent à
+Francfort.
 
 ### Vos amis, si vous en ajoutez
 
@@ -181,7 +250,16 @@ d'opposition.
 **L'effacement est immédiat et intégral, depuis l'application** : Profil → Réglages →
 « Supprimer mon compte ». Une confirmation est demandée, puis tout est supprimé — votre
 profil, votre bibliothèque, vos succès, votre liste de chasse, vos notes, vos hauts faits
-et vos amitiés. **C'est irréversible et il n'existe aucun export préalable.**
+et vos amitiés. **C'est irréversible.**
+
+**L'export de vos données se fait aussi depuis l'application**, et sans nous écrire. Il
+produit un fichier **JSON** — un format structuré, couramment utilisé et lisible par
+machine, comme le règlement l'exige — contenant ce que nous conservons de vous. Faites-le
+**avant** de supprimer votre compte : la suppression n'en garde aucune copie.
+
+Le catalogue partagé des jeux et des succès n'y figure pas : il ne vous concerne pas
+plus qu'un autre. Vos achats non plus — voir la section 9, c'est une écriture comptable
+et non une donnée de profil.
 
 **Vos amitiés partent dans les deux sens** : vous disparaissez aussi des classements de
 ceux qui vous avaient ajouté, sans qu'ils aient rien à faire.
@@ -204,7 +282,7 @@ cette fin.
 
 Les données techniques de connexion (section 4) expirent en quelques minutes.
 
-### La seule exception : les identifiants de transaction d'achat
+### Première exception : les identifiants de transaction d'achat
 
 Si vous achetez le déblocage à vie, nous conservons l'**identifiant de transaction**
 émis par Apple ou Google — jamais votre reçu, jamais un moyen de paiement, que nous ne
@@ -228,6 +306,21 @@ Google, qui eux savent qui a payé.
 La base légale de cette conservation est l'**intérêt légitime** à prévenir la fraude,
 que le RGPD reconnaît expressément.
 
+### Seconde exception : la carcasse technique d'un signalement
+
+Si vous avez signalé un problème, supprimer votre compte **efface le texte que vous aviez
+écrit** — une opération de la base s'en charge, dans la même transaction que la
+suppression — et détache la ligne de votre compte.
+
+**Ce qui reste est gardé exprès, et ne désigne plus personne :** la version d'Eukleia, la
+version du système, le modèle d'appareil et le journal technique. C'est le diagnostic
+pour lequel cette table existe ; effacer la ligne entière perdrait exactement ce qu'on
+cherchait à obtenir, sans rien protéger de plus.
+
+La différence avec les notes de votre liste de chasse, qui partent entièrement, tient à
+ceci : un signalement est une demande d'aide que vous nous adressez, et le défaut qu'il
+décrit concerne aussi les autres.
+
 ## 10. Enfants
 
 L'application n'est pas destinée aux enfants de moins de 13 ans et ne collecte
@@ -241,4 +334,6 @@ RetroAchievements.
 ## 11. Modifications
 
 Toute modification substantielle de ce document sera signalée par la mise à jour de la
-date en tête de page. Ce document est publié à l’adresse https://demoosx.github.io/eukleia-legal/.
+date en tête de page. Ce document est publié à l'adresse
+**https://demoosx.github.io/eukleia-legal/**, et c'est cette adresse qui est déclarée à
+l'App Store et au Play Store.
