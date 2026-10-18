@@ -4,7 +4,7 @@ title: Politique de confidentialité — Eukleia
 
 # Politique de confidentialité — Eukleia
 
-**Dernière mise à jour :** 3 octobre 2026
+**Dernière mise à jour :** 18 octobre 2026
 
 
 ## 1. En résumé
@@ -17,7 +17,8 @@ choisir lesquels viser.
 - **Vous ne saisissez jamais le mot de passe d'une plateforme de jeu.** Ni Steam, ni
   PlayStation, ni RetroAchievements — voir la section 3.
 - **Vos données sont hébergées dans l'Union européenne** (Francfort, Allemagne). Une
-  seule chose en sort, et seulement si vous signalez un problème — voir la section 6.
+  seule chose en sort, et seulement si vous signalez un problème : le texte de ce
+  signalement et son contexte technique, transmis à notre équipe — voir la section 6.
 - **Vos données ne sont visibles par personne d'autre**, sauf par les amis que vous
   ajoutez vous-même, et jamais vos notes — voir la section 6.
 - **Vous pouvez tout exporter et tout effacer depuis l'application**, définitivement, en
@@ -29,7 +30,7 @@ choisir lesquels viser.
 physique.
 
 Contact pour toute question ou demande relative à vos données :
-**contact@demoos.fr**
+**contact@eukleia.dev**
 
 Aucune adresse postale n'est publiée ici. Toute demande relative à vos données — accès,
 rectification, effacement, limitation ou opposition — se fait par cette adresse, et
@@ -106,10 +107,13 @@ dans l'application.
 | Liste de vos jeux, temps de jeu, date de dernière partie | Les plateformes liées | Prioriser ce qu'il vous reste à viser |
 | Vos succès débloqués et leur date | Les plateformes liées | Le cœur de l'application |
 | Vos hauts faits obtenus et leur date | Calculé | Votre collection de récompenses |
+| Vos points de hauts faits, votre niveau, et le titre que vous portez | Calculé, et vous pour le titre | Afficher votre niveau et votre titre, à vous et à vos amis — voir section 6 |
 | Votre progression sur les succès à compteur | Steam et votre saisie | Afficher les barres de progression |
 | Vos succès épinglés, leur ordre, et vos **notes libres** | Vous | Votre liste de chasse |
 | Identifiant de transaction d'un achat | Apple ou Google | Empêcher qu'un même reçu débloque plusieurs comptes — voir section 9 |
 | Le jeu que vous désignez comme actif | Vous | L'onglet « Chasse en cours » |
+| Le skin de profil que vous choisissez | Vous | Habiller votre écran de profil — vous seul le voyez |
+| Le jeu que vous choisissez comme fond de profil | Vous | Habiller l'en-tête de votre écran de profil — vous seul le voyez |
 | Si votre profil Steam est public | Déduit | Vous expliquer pourquoi la synchronisation échoue |
 | Dates de synchronisation | Système | Éviter de solliciter Steam inutilement |
 | Le texte d'un signalement de problème, et son contexte technique | Vous | Reproduire et corriger le défaut — voir ci-dessous |
@@ -121,16 +125,25 @@ pas prévu pour ça.
 ### Les signalements de problème
 
 Si vous signalez un problème depuis l'application (Réglages → Signaler un problème), nous
-conservons votre message et le contexte technique que l'écran vous annonce avant l'envoi :
-**la version d'Eukleia, la version de votre système, le modèle de votre appareil,
-l'identifiant de votre compte, et les dernières erreurs rencontrées par l'application**.
+conservons votre message, la catégorie et la fréquence que vous choisissez, et le contexte
+technique que l'écran vous annonce avant l'envoi : **la version d'Eukleia, la version de
+votre système, le modèle de votre appareil, l'identifiant de votre compte, les dernières
+erreurs rencontrées par l'application, et un contexte d'utilisation** — l'écran où vous
+étiez et les trois précédents, le type de votre compte (anonyme, Apple ou Google), quels
+services de jeu sont liés (oui ou non, **jamais leurs identifiants**), la date de votre
+dernière synchronisation Steam et RetroAchievements, votre langue, la taille de texte et le
+réglage de mouvement réduit de votre appareil, si vous avez débloqué Eukleia, le canal
+d'installation (développement, préversion ou production), votre fuseau horaire et votre
+région, et le nombre de jeux de votre bibliothèque.
 
 Ce contexte sert à reproduire le défaut. Le modèle d'appareil est l'identifiant matériel
 (« iPhone17,2 »), pas un numéro de série : il ne désigne pas votre appareil, il désigne
 son modèle.
 
-**Le message est du texte libre, et il part tel que vous l'écrivez.** N'y mettez rien que
-vous ne voudriez pas nous confier. Trois signalements au plus par période de 24 heures.
+**Le message est du texte libre, il part tel que vous l'écrivez. Il reste dans notre base,
+comme le contexte d'utilisation et les dernières erreurs, sauf si vous cochez la case qui les
+transmet à Notion et à Discord (section 6).** N'y mettez
+rien que vous ne voudriez pas nous confier. Trois signalements au plus par période de 24 heures.
 
 Ce que devient un signalement quand vous supprimez votre compte est décrit en section 9.
 
@@ -198,20 +211,44 @@ Eukleia, comme pour toute application où l'on se connecte ainsi.
 **Supabase.** Héberge la base de données et les fonctions serveur, dans sa région
 `eu-central-1` (**Francfort, Allemagne**). C'est là que vivent toutes vos données.
 
-**Notion**, et uniquement si vous signalez un problème. Nos signalements sont suivis dans
-un outil fourni par Notion Labs, Inc., société établie aux **États-Unis**. C'est le seul
-traitement de ce document qui sorte de l'Union européenne, et ce qui en sort est
-strictement délimité :
+**Notion et Discord**, et uniquement si vous signalez un problème. Nos signalements sont
+suivis dans deux outils : l'un fourni par Notion Labs, Inc., l'autre par Discord Inc.,
+deux sociétés établies aux **États-Unis**. Ce sont les seuls traitements de ce document
+qui sortent de l'Union européenne, et ce qui en sort est strictement délimité — le même
+contenu part chez les deux :
 
-| Part chez Notion | Ne part PAS chez Notion |
+| Part chez Notion et chez Discord | Ne part PAS |
 |---|---|
-| Un numéro de ligne, la date du signalement | **Votre message** |
-| La version d'Eukleia, la version de votre système | **L'identifiant de votre compte** |
-| Le modèle de votre appareil | **Le journal des erreurs** |
+| **Le texte que vous avez écrit, seulement si vous cochez la case** | **L'identifiant de votre compte** |
+| **Le contexte d'utilisation et les dernières erreurs techniques, seulement si vous cochez la case** | **Les identifiants Steam, PlayStation et RetroAchievements, les pseudos** |
+| Un numéro de ligne, la date du signalement | |
+| La version d'Eukleia, la version de votre système | |
+| Le modèle de votre appareil | |
+| La catégorie, l'écran où vous étiez, le canal d'installation | |
 
-Le code qui parle à Notion **ne charge même pas** le message, l'identifiant de compte ni
-le journal : ce qu'il ne lit pas ne peut pas sortir. Ces trois éléments restent à
-Francfort.
+**Le texte, le contexte d'utilisation et les dernières erreurs techniques partent chez Notion
+et chez Discord uniquement si vous cochez la case « Partager mon texte, le contexte et les
+erreurs récentes avec l'équipe » en écrivant votre signalement, et seulement pour ce
+signalement-là : la case est décochée à chaque fois.** Une seule case couvre les trois. Sans
+cette coche, ils restent dans notre base, à Francfort, et la fiche ne porte que les éléments
+techniques du tableau ci-dessus. Les builds d'avant le 17 octobre 2026, dont la case ne
+nommait pas les erreurs techniques, n'envoient jamais le contexte ni le journal, même cochée.
+
+**Le texte est celui que vous écrivez, tel quel.** Nous ne le filtrons pas : si vous y
+mettez un nom, une adresse ou toute autre information personnelle, elle part avec. N'y
+mettez rien que vous ne voudriez pas nous confier. Il est transmis sans votre
+identifiant de compte, mais ce que vous écrivez peut, lui, vous désigner.
+
+**Le contexte et les erreurs sont ceux que l'écran vous annonce avant l'envoi** (section 4) :
+l'écran où vous étiez et les trois précédents, le type de compte, quels services de jeu sont
+liés (oui ou non), la date de la dernière synchronisation, la langue, la taille de texte, le
+mouvement réduit, le palier, le canal, le fuseau horaire, la région, le nombre de jeux, et les
+dix dernières erreurs techniques, déjà expurgées de tout jeton. Chaque rubrique passe un filtre
+avant de partir ; ce qui n'y passe pas n'est pas transmis.
+
+Le code qui parle à Notion et à Discord **ne charge jamais l'identifiant de compte**, et ne
+lit le texte, le contexte et le journal que des signalements dont vous avez coché la case : ce
+qu'il ne lit pas ne peut pas sortir. L'identifiant de compte reste à Francfort.
 
 ### Vos amis, si vous en ajoutez
 
@@ -225,8 +262,8 @@ jours et ne sert qu'une fois.
 
 **Une amitié est réciproque, et ce qu'elle ouvre est large.** Un ami peut voir votre
 pseudo et votre image, votre liste de jeux et votre progression, vos succès débloqués,
-vos hauts faits, et votre score au classement. **Vos notes libres ne sont jamais
-partagées.**
+vos hauts faits, le titre que vous portez, votre niveau et vos points de hauts faits,
+et votre score au classement. **Vos notes libres ne sont jamais partagées.**
 
 **Vous pouvez retirer un ami à tout moment**, depuis l'écran Amis. L'accès est coupé
 immédiatement et **dans les deux sens** : vous ne voyez plus ses données, il ne voit plus
@@ -270,7 +307,7 @@ touchons pas, et supprimer votre compte Eukleia n'a aucun effet sur eux.
 Se déconnecter n'efface rien : cela ferme seulement la session sur l'appareil.
 
 Pour l'accès, la rectification ou toute autre demande, écrivez à
-**contact@demoos.fr**.
+**contact@eukleia.dev**.
 
 Vous pouvez également introduire une réclamation auprès de la CNIL (www.cnil.fr).
 
@@ -309,13 +346,23 @@ que le RGPD reconnaît expressément.
 ### Seconde exception : la carcasse technique d'un signalement
 
 Si vous avez signalé un problème, supprimer votre compte **efface le texte que vous aviez
-écrit** — une opération de la base s'en charge, dans la même transaction que la
-suppression — et détache la ligne de votre compte.
+écrit** dans notre base — une opération de la base s'en charge, dans la même transaction
+que la suppression — et détache la ligne de votre compte.
 
 **Ce qui reste est gardé exprès, et ne désigne plus personne :** la version d'Eukleia, la
-version du système, le modèle d'appareil et le journal technique. C'est le diagnostic
+version du système, le modèle d'appareil, le journal technique, la catégorie, la fréquence et le
+contexte d'utilisation (sans aucun identifiant). C'est le diagnostic
 pour lequel cette table existe ; effacer la ligne entière perdrait exactement ce qu'on
 cherchait à obtenir, sans rien protéger de plus.
+
+**Si vous aviez coché la case de partage, le texte, le contexte et les erreurs sont aussi
+effacés chez Notion et chez Discord.** Quand vous supprimez votre compte, la fiche Notion est archivée — déplacée dans
+la corbeille de Notion, qui la conserve 30 jours avant de la supprimer définitivement (Notion
+garde ensuite une trace technique 30 jours de plus, inaccessible aux utilisateurs) — et le
+texte, le contexte et les erreurs sont retirés du fil Discord. Le fil lui-même peut subsister, vide, sous son titre, qui ne
+porte que la version d'Eukleia et le modèle de votre appareil. Cet effacement est automatique
+mais peut tarder si l'un de ces services est indisponible ; écrivez à **contact@eukleia.dev**
+si vous voulez vérifier.
 
 La différence avec les notes de votre liste de chasse, qui partent entièrement, tient à
 ceci : un signalement est une demande d'aide que vous nous adressez, et le défaut qu'il
