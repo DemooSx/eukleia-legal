@@ -4,7 +4,7 @@ title: Politique de confidentialité — Eukleia
 
 # Politique de confidentialité — Eukleia
 
-**Dernière mise à jour :** 18 octobre 2026
+**Dernière mise à jour :** 26 octobre 2026
 
 
 ## 1. En résumé
@@ -112,6 +112,7 @@ dans l'application.
 | Vos succès épinglés, leur ordre, et vos **notes libres** | Vous | Votre liste de chasse |
 | Identifiant de transaction d'un achat | Apple ou Google | Empêcher qu'un même reçu débloque plusieurs comptes — voir section 9 |
 | Le jeu que vous désignez comme actif | Vous | L'onglet « Chasse en cours » |
+| Les jeux que vous mettez dans la réserve (« En réserve ») | Vous | Mettre de côté des chasses pour plus tard — vous seul la voyez |
 | Le skin de profil que vous choisissez | Vous | Habiller votre écran de profil — vous seul le voyez |
 | Le jeu que vous choisissez comme fond de profil | Vous | Habiller l'en-tête de votre écran de profil — vous seul le voyez |
 | Si votre profil Steam est public | Déduit | Vous expliquer pourquoi la synchronisation échoue |
@@ -263,7 +264,7 @@ jours et ne sert qu'une fois.
 **Une amitié est réciproque, et ce qu'elle ouvre est large.** Un ami peut voir votre
 pseudo et votre image, votre liste de jeux et votre progression, vos succès débloqués,
 vos hauts faits, le titre que vous portez, votre niveau et vos points de hauts faits,
-et votre score au classement. **Vos notes libres ne sont jamais partagées.**
+et votre score au classement. **Vos notes libres et votre réserve ne sont jamais partagées.**
 
 **Vous pouvez retirer un ami à tout moment**, depuis l'écran Amis. L'accès est coupé
 immédiatement et **dans les deux sens** : vous ne voyez plus ses données, il ne voit plus
@@ -286,7 +287,7 @@ d'opposition.
 
 **L'effacement est immédiat et intégral, depuis l'application** : Profil → Réglages →
 « Supprimer mon compte ». Une confirmation est demandée, puis tout est supprimé — votre
-profil, votre bibliothèque, vos succès, votre liste de chasse, vos notes, vos hauts faits
+profil, votre bibliothèque, vos succès, votre liste de chasse, votre réserve, vos notes, vos hauts faits
 et vos amitiés. **C'est irréversible.**
 
 **L'export de vos données se fait aussi depuis l'application**, et sans nous écrire. Il
