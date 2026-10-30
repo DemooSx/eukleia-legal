@@ -4,7 +4,7 @@ title: Politique de confidentialité — Eukleia
 
 # Politique de confidentialité — Eukleia
 
-**Dernière mise à jour :** 26 octobre 2026
+**Dernière mise à jour :** 29 octobre 2026
 
 
 ## 1. En résumé
@@ -123,6 +123,13 @@ dans l'application.
 d'autre que vous, mais évitez d'y mettre quoi que ce soit de sensible : ce champ n'est
 pas prévu pour ça.
 
+**Le Bilan du chasseur ne conserve rien.** Ce récapitulatif de vos 30 derniers jours, de
+votre année ou de tout votre historique est **calculé à la demande**, par notre serveur, à
+partir de ce que le tableau ci-dessus nomme déjà (vos succès débloqués et leur date, vos
+hauts faits). Il n'est écrit nulle part : il n'y a rien de plus à exporter ni à effacer.
+Pour compter vos jours là où vous vivez, l'application envoie à notre serveur le fuseau
+horaire de votre appareil, le temps du calcul ; il n'est pas enregistré dans notre base.
+
 ### Les signalements de problème
 
 Si vous signalez un problème depuis l'application (Réglages → Signaler un problème), nous
@@ -182,6 +189,14 @@ L'application conserve localement :
 **Les widgets.** Si vous posez un widget Eukleia sur votre écran d'accueil, l'application
 dépose dans un espace partagé avec lui, sur votre appareil, l'instantané de ce qu'il
 affiche. Cet espace ne quitte pas l'appareil.
+
+**L'image du Bilan.** Si vous partagez votre bilan, l'application fabrique une image **sur
+votre appareil**, dans l'espace temporaire de l'application, et l'ouvre dans la feuille de
+partage du système. **Eukleia n'envoie pas cette image et ne la garde pas** : elle ne va que
+là où vous la déposez. Elle porte le nom qui s'affiche sur votre profil, vos chiffres, vos
+trois succès les plus rares et votre jeu de la période : choisissez avec qui vous la
+partagez. Une fois partagée ailleurs, elle échappe à Eukleia et relève de l'application qui
+la reçoit.
 
 Désinstaller l'application efface tout cela, y compris le jeton PlayStation et
 l'instantané des widgets. Cela **n'efface pas** les données conservées sur le serveur —
@@ -264,7 +279,7 @@ jours et ne sert qu'une fois.
 **Une amitié est réciproque, et ce qu'elle ouvre est large.** Un ami peut voir votre
 pseudo et votre image, votre liste de jeux et votre progression, vos succès débloqués,
 vos hauts faits, le titre que vous portez, votre niveau et vos points de hauts faits,
-et votre score au classement. **Vos notes libres et votre réserve ne sont jamais partagées.**
+et votre score au classement. **Vos notes libres, votre réserve et votre Bilan ne sont jamais partagés.**
 
 **Vous pouvez retirer un ami à tout moment**, depuis l'écran Amis. L'accès est coupé
 immédiatement et **dans les deux sens** : vous ne voyez plus ses données, il ne voit plus
