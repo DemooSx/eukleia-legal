@@ -4,7 +4,7 @@ title: Politique de confidentialité — Eukleia
 
 # Politique de confidentialité — Eukleia
 
-**Dernière mise à jour :** 29 octobre 2026
+**Dernière mise à jour :** 9 novembre 2026
 
 
 ## 1. En résumé
@@ -20,7 +20,9 @@ choisir lesquels viser.
   seule chose en sort, et seulement si vous signalez un problème : le texte de ce
   signalement et son contexte technique, transmis à notre équipe — voir la section 6.
 - **Vos données ne sont visibles par personne d'autre**, sauf par les amis que vous
-  ajoutez vous-même, et jamais vos notes — voir la section 6.
+  ajoutez vous-même, et jamais vos notes — voir la section 6. **Une seule exception, et
+  c'est vous qui la déclenchez : une astuce que vous publiez sur un succès est lisible par
+  les autres joueurs**, sans votre nom — voir la section 6.
 - **Vous pouvez tout exporter et tout effacer depuis l'application**, définitivement, en
   deux touches, sans nous écrire.
 
@@ -118,6 +120,10 @@ dans l'application.
 | Si votre profil Steam est public | Déduit | Vous expliquer pourquoi la synchronisation échoue |
 | Dates de synchronisation | Système | Éviter de solliciter Steam inutilement |
 | Le texte d'un signalement de problème, et son contexte technique | Vous | Reproduire et corriger le défaut — voir ci-dessous |
+| Les **astuces** que vous publiez sur un succès, leur langue et leur date | Vous | Les montrer aux autres joueurs — voir ci-dessous et section 6 |
+| Les astuces que vous marquez « Utile », signalez, ou dont vous bloquez l'auteur | Vous | Classer les astuces, les modérer, ne plus vous montrer un auteur |
+| Le fuseau horaire de votre appareil | Votre appareil | Faire commencer vos semaines et vos journées là où vous vivez (défis hebdomadaires) |
+| Votre progression et vos réussites aux défis hebdomadaires | Calculé | L'écran Ascension — vous seul la voyez |
 
 **Les notes que vous écrivez sont du texte libre.** Elles ne sont lues par personne
 d'autre que vous, mais évitez d'y mettre quoi que ce soit de sensible : ce champ n'est
@@ -128,7 +134,25 @@ votre année ou de tout votre historique est **calculé à la demande**, par not
 partir de ce que le tableau ci-dessus nomme déjà (vos succès débloqués et leur date, vos
 hauts faits). Il n'est écrit nulle part : il n'y a rien de plus à exporter ni à effacer.
 Pour compter vos jours là où vous vivez, l'application envoie à notre serveur le fuseau
-horaire de votre appareil, le temps du calcul ; il n'est pas enregistré dans notre base.
+horaire de votre appareil. **Depuis le 1er novembre 2026, ce fuseau est aussi enregistré
+avec votre profil** (« Europe/Paris », par exemple) : les défis hebdomadaires en ont besoin
+pour découper vos semaines, même quand l'application est fermée. Il désigne une région du
+monde, jamais une position.
+
+### Les astuces que vous publiez
+
+Sur un succès que **vous avez débloqué**, vous pouvez publier une astuce : un texte court
+(280 caractères au plus), trois au plus par succès. Nous conservons son texte, sa langue,
+sa date et votre identifiant de compte, pour que vous puissiez la retrouver et la
+supprimer. Qui la lit, et ce qu'il voit de vous, est décrit en section 6.
+
+**Une astuce est du texte libre, publié tel que vous l'écrivez.** N'y mettez ni votre nom,
+ni un moyen de vous joindre, ni rien de personnel : contrairement à vos notes, d'autres
+la liront.
+
+Quand vous marquez une astuce « Utile », la signalez ou bloquez son auteur, nous
+enregistrons ce geste avec votre identifiant de compte. L'auteur n'en est jamais informé :
+il ne voit qu'un nombre de votes, sans savoir de qui ils viennent.
 
 ### Les signalements de problème
 
@@ -169,7 +193,8 @@ connexion. Les lignes expirées sont effacées une heure plus tard.
 
 Ni votre position, ni vos contacts, ni votre carnet d'adresses, ni l'identifiant
 publicitaire de votre appareil, ni la liste de vos autres applications, ni aucune donnée
-biométrique. L'application ne demande **aucune permission système**.
+biométrique. L'application ne vous demande **aucune autorisation** : ni position, ni
+contacts, ni photos, ni micro, ni caméra, ni notifications.
 
 ## 5. Sur votre appareil
 
@@ -182,13 +207,16 @@ L'application conserve localement :
   l'application s'ouvre sans attendre le réseau ;
 - les jetons de votre session, pour ne pas vous redemander de vous connecter ;
 - **votre jeton de session PlayStation**, si vous avez lié un compte PlayStation. Il est
-  rangé dans le **stockage sécurisé du système** (le trousseau d'iOS), et nulle part
+  rangé dans le **stockage sécurisé du système** (le trousseau d'iOS, le Keystore
+  d'Android), et nulle part
   ailleurs : il n'est jamais écrit dans notre base. Il voyage vers notre serveur le temps
   d'une synchronisation, qui l'emploie et l'oublie.
 
-**Les widgets.** Si vous posez un widget Eukleia sur votre écran d'accueil, l'application
-dépose dans un espace partagé avec lui, sur votre appareil, l'instantané de ce qu'il
-affiche. Cet espace ne quitte pas l'appareil.
+**Les widgets.** Si vous posez un widget Eukleia sur votre écran d'accueil (iPhone ou
+Android), l'application dépose dans un espace partagé avec lui, sur votre appareil,
+l'instantané de ce qu'il affiche. Cet espace ne quitte pas l'appareil. Pour que le widget
+reste à jour, le système peut réveiller l'application en arrière-plan de temps à autre :
+elle recharge alors vos propres données depuis notre serveur, rien de plus.
 
 **L'image du Bilan.** Si vous partagez votre bilan, l'application fabrique une image **sur
 votre appareil**, dans l'espace temporaire de l'application, et l'ouvre dans la feuille de
@@ -224,14 +252,38 @@ et votre clé d'API.
 **Apple et Google**, si vous vous connectez par l'un d'eux : ils savent que vous utilisez
 Eukleia, comme pour toute application où l'on se connecte ainsi.
 
+**Apple (App Store) et Google (Google Play), si vous achetez le déblocage à vie.** Le
+paiement se fait entièrement chez eux : nous ne voyons jamais votre moyen de paiement.
+L'application transmet à notre serveur la preuve d'achat que le magasin lui remet, et
+notre serveur la fait confirmer auprès d'Apple ou de Google. Si vous êtes remboursé, le
+magasin nous en avertit et le déblocage est retiré — voir la section 9.
+
+**Anthropic**, si vous utilisez l'aide aux succès. L'explication d'un succès et le résumé
+des conseils trouvés sur le web sont rédigés par un modèle d'IA d'Anthropic PBC, société
+établie aux **États-Unis**, appelé par notre serveur. **Il ne reçoit que le jeu, sa
+plateforme, le succès, sa description, sa rareté, s'il est caché, et la langue voulue :
+jamais votre identifiant, votre pseudo, ni rien qui vous désigne.** Pour le résumé,
+Anthropic lance lui-même des recherches web sur ce succès. La réponse est conservée dans
+notre base et resservie à tous les joueurs qui demandent le même succès : elle ne vous
+concerne pas plus qu'un autre.
+
+**La boutique Steam et Wikidata, interrogés depuis votre appareil.** Pour vous montrer
+les sorties à venir, l'application lit directement auprès de Steam la liste de souhaits
+publique de votre SteamID et les fiches de la boutique ; pour compléter la fiche de
+certains jeux, elle interroge Wikidata (Wikimedia Foundation, **États-Unis**) avec le nom
+du jeu. Ces requêtes partent de votre appareil : comme pour toute page web, ces
+services voient l'adresse IP de votre connexion. Votre liste de souhaits n'est pas
+enregistrée sur notre serveur, et Wikidata ne reçoit aucune donnée de compte. Les images
+des jeux et des succès sont, elles aussi, chargées depuis les serveurs des plateformes.
+
 **Supabase.** Héberge la base de données et les fonctions serveur, dans sa région
 `eu-central-1` (**Francfort, Allemagne**). C'est là que vivent toutes vos données.
 
-**Notion et Discord**, et uniquement si vous signalez un problème. Nos signalements sont
+**Notion et Discord**, et uniquement si un signalement est fait. Nos signalements sont
 suivis dans deux outils : l'un fourni par Notion Labs, Inc., l'autre par Discord Inc.,
 deux sociétés établies aux **États-Unis**. Ce sont les seuls traitements de ce document
-qui sortent de l'Union européenne, et ce qui en sort est strictement délimité — le même
-contenu part chez les deux :
+qui font sortir de l'Union européenne un texte écrit par un utilisateur, et ce qui en
+sort est strictement délimité — le même contenu part chez les deux :
 
 | Part chez Notion et chez Discord | Ne part PAS |
 |---|---|
@@ -266,10 +318,35 @@ Le code qui parle à Notion et à Discord **ne charge jamais l'identifiant de co
 lit le texte, le contexte et le journal que des signalements dont vous avez coché la case : ce
 qu'il ne lit pas ne peut pas sortir. L'identifiant de compte reste à Francfort.
 
+**Signaler une astuce ou une réponse de l'IA passe par la même chaîne**, sans écran ni
+case. Signaler une réponse de l'IA n'envoie que le jeu, le succès et la langue, qui restent
+dans notre base. **Signaler l'astuce d'un joueur envoie son texte chez Notion et chez
+Discord**, avec le numéro de l'astuce, pour que nous puissions décider sans fouiller la
+base : c'est le texte publié qui part, jamais le nom ni l'identifiant de son auteur. Ces
+signalements comptent dans la limite de trois par 24 heures.
+
+### Les astuces que vous publiez
+
+Une astuce publiée est **lisible par tous les utilisateurs d'Eukleia qui ont acheté le
+déblocage à vie**, sur la fiche du succès. Ils voient son texte, sa langue et son nombre
+de votes « Utile ». **Ils ne voient ni votre nom, ni votre pseudo, ni votre identifiant :
+l'auteur s'affiche « Un joueur ».** Seuls vos amis voient le nom de votre profil à côté de
+vos astuces, ce que leur amitié leur montre déjà ailleurs. Publier une astuce sur un
+succès laisse savoir que son auteur l'a débloqué, sans dire qui il est.
+
+**La modération.** Tout utilisateur peut signaler une astuce ou ne plus voir les astuces
+de son auteur. Une astuce signalée par deux personnes différentes est masquée pour tous,
+sauf pour vous, qui la voyez étiquetée. Nous pouvons aussi retirer à un compte le droit
+de publier ; ses astuces cessent alors d'être montrées.
+
+Vous pouvez **supprimer vos astuces à tout moment** depuis la fiche du succès : elles
+disparaissent aussitôt pour tous. Ce qu'il advient d'une astuce déjà signalée est décrit
+en section 9.
+
 ### Vos amis, si vous en ajoutez
 
-C'est le **seul cas où une autre personne voit vos données**, et il n'existe que si vous
-le déclenchez vous-même.
+C'est le **seul cas où une autre personne voit vos données de jeu**, et il n'existe que
+si vous le déclenchez vous-même.
 
 L'application permet d'ajouter des amis et de se comparer à eux. **Il n'y a aucun
 annuaire : personne ne peut vous trouver.** Une amitié ne se noue que si l'un de vous
@@ -279,7 +356,9 @@ jours et ne sert qu'une fois.
 **Une amitié est réciproque, et ce qu'elle ouvre est large.** Un ami peut voir votre
 pseudo et votre image, votre liste de jeux et votre progression, vos succès débloqués,
 vos hauts faits, le titre que vous portez, votre niveau et vos points de hauts faits,
-et votre score au classement. **Vos notes libres, votre réserve et votre Bilan ne sont jamais partagés.**
+et votre score au classement, ainsi que le nom de votre profil à côté des astuces que vous
+publiez. **Vos notes libres, votre réserve, votre Bilan et vos défis hebdomadaires ne sont
+jamais partagés.**
 
 **Vous pouvez retirer un ami à tout moment**, depuis l'écran Amis. L'accès est coupé
 immédiatement et **dans les deux sens** : vous ne voyez plus ses données, il ne voit plus
@@ -302,8 +381,9 @@ d'opposition.
 
 **L'effacement est immédiat et intégral, depuis l'application** : Profil → Réglages →
 « Supprimer mon compte ». Une confirmation est demandée, puis tout est supprimé — votre
-profil, votre bibliothèque, vos succès, votre liste de chasse, votre réserve, vos notes, vos hauts faits
-et vos amitiés. **C'est irréversible.**
+profil, votre bibliothèque, vos succès, votre liste de chasse, votre réserve, vos notes, vos hauts faits,
+vos défis, vos amitiés, vos astuces, vos votes, vos signalements d'astuces et vos blocages.
+**C'est irréversible.**
 
 **L'export de vos données se fait aussi depuis l'application**, et sans nous écrire. Il
 produit un fichier **JSON** — un format structuré, couramment utilisé et lisible par
@@ -313,6 +393,11 @@ machine, comme le règlement l'exige — contenant ce que nous conservons de vou
 Le catalogue partagé des jeux et des succès n'y figure pas : il ne vous concerne pas
 plus qu'un autre. Vos achats non plus — voir la section 9, c'est une écriture comptable
 et non une donnée de profil.
+
+**Ce que le fichier ne contient pas encore, et nous préférons l'écrire :** vos astuces,
+vos votes, vos signalements d'astuces, vos blocages, votre fuseau horaire et vos défis
+hebdomadaires. Vos astuces restent lisibles dans l'application, sur chaque succès
+(« Tes astuces ») ; pour obtenir le reste, écrivez à **contact@eukleia.dev**.
 
 **Vos amitiés partent dans les deux sens** : vous disparaissez aussi des classements de
 ceux qui vous avaient ajouté, sans qu'ils aient rien à faire.
@@ -338,13 +423,14 @@ Les données techniques de connexion (section 4) expirent en quelques minutes.
 ### Première exception : les identifiants de transaction d'achat
 
 Si vous achetez le déblocage à vie, nous conservons l'**identifiant de transaction**
-émis par Apple ou Google — jamais votre reçu, jamais un moyen de paiement, que nous ne
-voyons à aucun moment. Cette ligne **survit à la suppression de votre compte**, mais
+émis par Apple ou Google (le numéro de commande, chez Google) — jamais votre reçu,
+jamais un moyen de paiement, que nous ne voyons à aucun moment. Cette ligne **survit à la suppression de votre compte**, mais
 elle en est **détachée** : le lien vers votre compte est effacé, et il ne reste qu'un
 identifiant émis par le magasin, qui ne désigne plus personne dans notre base.
 
 **Pourquoi cette exception existe.** Un reçu d'achat est un jeton au porteur : le
-vérifier auprès d'Apple prouve qu'il est authentique, pas qu'il vous appartient. Si
+vérifier auprès d'Apple ou de Google prouve qu'il est authentique, pas qu'il vous
+appartient. Si
 nous effacions cette ligne avec votre compte, le même reçu pourrait être présenté par
 un autre compte — ou par vous-même après avoir recréé le vôtre — et débloquer
 l'application autant de fois qu'on le voudrait. La suppression de compte deviendrait un
@@ -358,6 +444,11 @@ Google, qui eux savent qui a payé.
 
 La base légale de cette conservation est l'**intérêt légitime** à prévenir la fraude,
 que le RGPD reconnaît expressément.
+
+**Un remboursement retire le déblocage.** Quand Apple ou Google nous signale qu'un achat a
+été remboursé, nous le vérifions auprès du magasin, puis retirons le déblocage du compte
+qui l'avait utilisé. La ligne de l'achat est conservée, marquée comme remboursée, pour la
+même raison que ci-dessus.
 
 ### Seconde exception : la carcasse technique d'un signalement
 
@@ -384,14 +475,29 @@ La différence avec les notes de votre liste de chasse, qui partent entièrement
 ceci : un signalement est une demande d'aide que vous nous adressez, et le défaut qu'il
 décrit concerne aussi les autres.
 
+### Troisième exception : le texte d'une astuce signalée
+
+Supprimer une astuce, ou votre compte, l'efface de notre base et la retire de
+l'application pour tous. **Mais si un autre joueur l'avait signalée, une copie de son
+texte vit dans ce signalement** — dans notre base, chez Notion et chez Discord — parce
+que c'est sur ce texte que porte la décision de modération. Cette copie n'est rattachée
+ni à votre nom ni à votre compte ; elle est effacée quand la personne qui a signalé
+supprime le sien, comme ses autres signalements. Écrivez à **contact@eukleia.dev** si
+vous voulez qu'elle le soit plus tôt.
+
+De même, **si un joueur a bloqué l'auteur d'une astuce**, sa liste des auteurs bloqués
+garde les soixante premiers caractères de l'astuce qui a motivé le blocage, pour qu'il
+sache qui il débloque. Lui seul la voit ; elle disparaît quand l'auteur supprime son
+compte ou que le joueur lève le blocage.
+
 ## 10. Enfants
 
 L'application n'est pas destinée aux enfants de moins de 13 ans et ne collecte
 sciemment aucune donnée les concernant.
 
 Aucun compte de plateforme de jeu n'est nécessaire pour l'utiliser. Les conditions d'âge
-qui s'appliquent sont donc celles du moyen de connexion que vous choisissez — Apple,
-Google ou une adresse e-mail — et, si vous les liez, celles de Steam, PlayStation et
+qui s'appliquent sont donc celles du moyen de connexion que vous choisissez — Apple ou
+Google — et, si vous les liez, celles de Steam, PlayStation et
 RetroAchievements.
 
 ## 11. Modifications
