@@ -4,18 +4,18 @@ title: Politique de confidentialité — Eukleia
 
 # Politique de confidentialité — Eukleia
 
-**Dernière mise à jour :** 9 novembre 2026
+**Dernière mise à jour :** 22 novembre 2026
 
 
 ## 1. En résumé
 
-Eukleia rassemble vos succès Steam, PlayStation et RetroAchievements, et vous aide à
+Eukleia rassemble vos succès Steam, PlayStation, Xbox et RetroAchievements, et vous aide à
 choisir lesquels viser.
 
 - **Aucune publicité, aucun pistage, aucune mesure d'audience.** L'application n'embarque
   aucun outil d'analytique, de suivi de plantages ou de profilage publicitaire.
-- **Vous ne saisissez jamais le mot de passe d'une plateforme de jeu.** Ni Steam, ni
-  PlayStation, ni RetroAchievements — voir la section 3.
+- **Eukleia ne voit jamais le mot de passe d'une plateforme de jeu.** Ni Steam, ni
+  PlayStation, ni Xbox, ni RetroAchievements — voir la section 3.
 - **Vos données sont hébergées dans l'Union européenne** (Francfort, Allemagne). Une
   seule chose en sort, et seulement si vous signalez un problème : le texte de ce
   signalement et son contexte technique, transmis à notre équipe — voir la section 6.
@@ -77,10 +77,10 @@ Vous pouvez à tout moment attacher un compte Apple ou Google à une session ano
 liaison se fait sur le même compte côté serveur, et vous gardez tout ce que vous avez
 déjà fait.
 
-### Les trois plateformes de jeu sont des liens, pas des identités
+### Les quatre plateformes de jeu sont des liens, pas des identités
 
-Steam, PlayStation et RetroAchievements se **rattachent** à un compte existant. Aucune
-des trois ne sert à se connecter, et vous pouvez n'en lier aucune.
+Steam, PlayStation, Xbox et RetroAchievements se **rattachent** à un compte existant. Aucune
+des quatre ne sert à se connecter, et vous pouvez n'en lier aucune.
 
 **Steam** utilise Steam OpenID, le mécanisme officiel de Valve : votre mot de passe Steam
 n'est jamais vu, ni transmis, ni stocké, et Steam ne nous renvoie que votre
@@ -94,6 +94,16 @@ navigateur. **Votre mot de passe PlayStation n'est jamais demandé, et nous vous
 déconseillons formellement de le saisir où que ce soit dans l'application** — elle ne
 vous le demandera jamais. Ce jeton n'est conservé que le temps de la synchronisation.
 
+**Xbox** se lie par la connexion officielle de Microsoft, qui s'ouvre dans une fenêtre du
+navigateur de votre système. Vous saisissez votre mot de passe **chez Microsoft**, sur sa
+page : l'application ne le voit pas, ne le reçoit pas et ne le stocke pas. Microsoft vous
+demande d'autoriser Eukleia à accéder à votre profil Xbox, et vous pouvez retirer cette
+autorisation à tout moment depuis votre compte Microsoft. Nous n'en gardons que votre
+**gamertag** et votre **identifiant Xbox (XUID)**. Les comptes Xbox d'enfants ne peuvent
+pas être liés. Eukleia n'est ni affiliée à Microsoft ni approuvée par elle, et Microsoft
+peut interrompre cet accès : la synchronisation Xbox s'arrêterait alors, sans effet sur
+ce qui est déjà enregistré.
+
 ## 4. Ce qui est conservé, et pourquoi
 
 Tout ce qui suit vient des plateformes que vous avez liées, ou de ce que vous saisissez
@@ -104,6 +114,7 @@ dans l'application.
 | Votre adresse e-mail | Apple, Google, ou vous | Vous reconnaître d'une session à l'autre |
 | Identifiant SteamID64 | Steam | Vous relier à votre bibliothèque |
 | Pseudo PlayStation | PlayStation | Vous relier à vos trophées |
+| Gamertag et identifiant Xbox (XUID) | Xbox | Vous relier à vos succès, et reconnaître un changement de compte |
 | Pseudo RetroAchievements | RetroAchievements | Vous relier à vos succès |
 | Pseudo Steam et image de profil | Steam | Afficher votre identité dans l'application |
 | Liste de vos jeux, temps de jeu, date de dernière partie | Les plateformes liées | Prioriser ce qu'il vous reste à viser |
@@ -211,6 +222,10 @@ L'application conserve localement :
   d'Android), et nulle part
   ailleurs : il n'est jamais écrit dans notre base. Il voyage vers notre serveur le temps
   d'une synchronisation, qui l'emploie et l'oublie.
+- **votre connexion Microsoft**, si vous avez lié un compte Xbox : le jeton qui permet de
+  la renouveler, rangé lui aussi dans le stockage sécurisé du système et **jamais envoyé
+  à notre serveur**. Seul un jeton d'accès d'une heure voyage vers notre serveur le temps
+  d'une synchronisation, qui l'emploie et l'oublie : il n'est jamais écrit dans notre base.
 
 **Les widgets.** Si vous posez un widget Eukleia sur votre écran d'accueil (iPhone ou
 Android), l'application dépose dans un espace partagé avec lui, sur votre appareil,
@@ -226,7 +241,7 @@ trois succès les plus rares et votre jeu de la période : choisissez avec qui v
 partagez. Une fois partagée ailleurs, elle échappe à Eukleia et relève de l'application qui
 la reçoit.
 
-Désinstaller l'application efface tout cela, y compris le jeton PlayStation et
+Désinstaller l'application efface tout cela, y compris le jeton PlayStation, la connexion Microsoft et
 l'instantané des widgets. Cela **n'efface pas** les données conservées sur le serveur —
 voir la section 8.
 
@@ -245,6 +260,10 @@ Consultez la politique de confidentialité de Steam pour ce qu'il en fait.
 
 **Sony Interactive Entertainment (PlayStation).** Interrogé uniquement si vous avez lié
 un compte PlayStation, avec le jeton de session que vous avez fourni.
+
+**Microsoft (Xbox).** Interrogé uniquement si vous avez lié un compte Xbox, avec le jeton
+d'accès issu de votre connexion Microsoft. Microsoft sait donc que vous avez autorisé
+Eukleia. Nous ne lui transmettons aucune autre donnée.
 
 **RetroAchievements.** Interrogé uniquement si vous avez lié un compte, avec votre pseudo
 et votre clé d'API.
@@ -288,7 +307,7 @@ sort est strictement délimité — le même contenu part chez les deux :
 | Part chez Notion et chez Discord | Ne part PAS |
 |---|---|
 | **Le texte que vous avez écrit, seulement si vous cochez la case** | **L'identifiant de votre compte** |
-| **Le contexte d'utilisation et les dernières erreurs techniques, seulement si vous cochez la case** | **Les identifiants Steam, PlayStation et RetroAchievements, les pseudos** |
+| **Le contexte d'utilisation et les dernières erreurs techniques, seulement si vous cochez la case** | **Les identifiants Steam, PlayStation, Xbox et RetroAchievements, les pseudos** |
 | Un numéro de ligne, la date du signalement | |
 | La version d'Eukleia, la version de votre système | |
 | Le modèle de votre appareil | |
@@ -402,7 +421,7 @@ hebdomadaires. Vos astuces restent lisibles dans l'application, sur chaque succ�
 **Vos amitiés partent dans les deux sens** : vous disparaissez aussi des classements de
 ceux qui vous avaient ajouté, sans qu'ils aient rien à faire.
 
-Vos succès restent évidemment sur Steam, PlayStation et RetroAchievements ; nous n'y
+Vos succès restent évidemment sur Steam, PlayStation, Xbox et RetroAchievements ; nous n'y
 touchons pas, et supprimer votre compte Eukleia n'a aucun effet sur eux.
 
 Se déconnecter n'efface rien : cela ferme seulement la session sur l'appareil.
@@ -497,7 +516,7 @@ sciemment aucune donnée les concernant.
 
 Aucun compte de plateforme de jeu n'est nécessaire pour l'utiliser. Les conditions d'âge
 qui s'appliquent sont donc celles du moyen de connexion que vous choisissez — Apple ou
-Google — et, si vous les liez, celles de Steam, PlayStation et
+Google — et, si vous les liez, celles de Steam, PlayStation, Xbox et
 RetroAchievements.
 
 ## 11. Modifications
