@@ -4,8 +4,7 @@ title: Politique de confidentialité — Eukleia
 
 # Politique de confidentialité — Eukleia
 
-**Dernière mise à jour :** 22 novembre 2026
-
+**Dernière mise à jour :** 23 novembre 2026
 
 ## 1. En résumé
 
@@ -204,8 +203,9 @@ connexion. Les lignes expirées sont effacées une heure plus tard.
 
 Ni votre position, ni vos contacts, ni votre carnet d'adresses, ni l'identifiant
 publicitaire de votre appareil, ni la liste de vos autres applications, ni aucune donnée
-biométrique. L'application ne vous demande **aucune autorisation** : ni position, ni
-contacts, ni photos, ni micro, ni caméra, ni notifications.
+biométrique. L'application ne vous demande ni position, ni contacts, ni photos, ni micro,
+ni caméra. **La seule autorisation qu'elle peut demander est celle d'afficher des
+notifications**, et seulement si vous allumez vous-même un rappel du Radar (section 7).
 
 ## 5. Sur votre appareil
 
@@ -213,6 +213,7 @@ L'application conserve localement :
 
 - votre choix de langue ;
 - votre choix d'affichage des libellés de la barre d'onglets ;
+- vos réglages du Radar : quels rappels vous avez allumés ;
 - votre ordre de tri de la bibliothèque, et votre mode d'affichage du Panthéon ;
 - une **copie de travail** des données déjà chargées — vos jeux, vos succès — pour que
   l'application s'ouvre sans attendre le réseau ;
@@ -387,11 +388,17 @@ N'ajoutez donc que des personnes à qui vous acceptez de montrer votre activité
 
 ## 7. Notifications
 
-L'application **n'envoie aucune notification** et ne collecte aucun jeton de notification.
+**Notre serveur n'envoie aucune notification**, et l'application ne collecte aucun jeton de
+notification. Rien dans la base ne peut en stocker.
 
-Rien dans la base ne peut en stocker : la table qui l'aurait permis existait sans qu'aucun
-code ne l'écrive ni ne la lise, et elle a été supprimée le 18 août plutôt que laissée à
-dormir.
+**Le Radar.** Si vous allumez un rappel du Radar dans les Réglages (la sortie d'un jeu de
+votre liste de souhaits, les défis de la semaine, une chasse délaissée), l'application
+vous demande alors l'autorisation d'afficher des notifications, puis **programme ces
+rappels sur votre appareil**, à partir de ce qu'elle sait déjà. Ils sont préparés et
+affichés par votre téléphone : rien de plus n'est envoyé à notre serveur ni à un service
+de notification, et vos réglages du Radar ne quittent pas l'appareil. Tout est éteint par
+défaut. Éteindre un rappel, retirer l'autorisation dans les réglages du système ou
+désinstaller l'application y met fin.
 
 ## 8. Vos droits, et comment les exercer
 
