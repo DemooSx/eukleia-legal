@@ -4,7 +4,7 @@ title: Politique de confidentialité — Eukleia
 
 # Politique de confidentialité — Eukleia
 
-**Dernière mise à jour :** 23 novembre 2026
+**Dernière mise à jour :** 24 novembre 2026
 
 ## 1. En résumé
 
@@ -287,13 +287,15 @@ Anthropic lance lui-même des recherches web sur ce succès. La réponse est con
 notre base et resservie à tous les joueurs qui demandent le même succès : elle ne vous
 concerne pas plus qu'un autre.
 
-**La boutique Steam et Wikidata, interrogés depuis votre appareil.** Pour vous montrer
-les sorties à venir, l'application lit directement auprès de Steam la liste de souhaits
-publique de votre SteamID et les fiches de la boutique ; pour compléter la fiche de
-certains jeux, elle interroge Wikidata (Wikimedia Foundation, **États-Unis**) avec le nom
-du jeu. Ces requêtes partent de votre appareil : comme pour toute page web, ces
+**La boutique Steam, Wikidata et Wikipédia, interrogés depuis votre appareil.** Pour vous
+montrer les sorties à venir, l'application lit directement auprès de Steam la liste de
+souhaits publique de votre SteamID et les fiches de la boutique ; pour compléter la fiche
+de certains jeux, elle interroge Wikidata avec le nom du jeu ou son identifiant Steam, puis Wikipédia avec le titre
+de son article pour en lire le résumé (toutes deux de la Wikimedia Foundation,
+**États-Unis**). Ces requêtes partent de votre appareil : comme pour toute page web, ces
 services voient l'adresse IP de votre connexion. Votre liste de souhaits n'est pas
-enregistrée sur notre serveur, et Wikidata ne reçoit aucune donnée de compte. Les images
+enregistrée sur notre serveur, et ni Wikidata ni Wikipédia ne reçoivent de donnée de
+compte. Les images
 des jeux et des succès sont, elles aussi, chargées depuis les serveurs des plateformes.
 
 **Supabase.** Héberge la base de données et les fonctions serveur, dans sa région
