@@ -4,7 +4,7 @@ title: Politique de confidentialité — Eukleia
 
 # Politique de confidentialité — Eukleia
 
-**Dernière mise à jour :** 25 novembre 2026
+**Dernière mise à jour :** 28 novembre 2026
 
 ## 1. En résumé
 
@@ -88,7 +88,7 @@ n'est jamais vu, ni transmis, ni stocké, et Steam ne nous renvoie que votre
 **RetroAchievements** se lie par votre pseudo et une clé d'API que vous générez sur leur
 site. Votre mot de passe RetroAchievements n'est jamais demandé.
 
-**PlayStation** se lie de deux façons. Sur iPhone, par la page de connexion de Sony, qui
+**PlayStation** se lie de deux façons. Sur iPhone et sur Android, par la page de connexion de Sony, qui
 s'ouvre dans une fenêtre du navigateur de votre système : vous saisissez votre mot de passe
 **chez Sony**, sur sa page, et l'application ne le voit pas, ne le reçoit pas et ne le
 stocke pas. Sony renvoie alors à l'application un jeton de session. Sur tout appareil,
